@@ -1,0 +1,96 @@
+.day {
+  /* border: 0.5px solid rgb(172, 196, 66); */
+  box-shadow: 0px 0px 1.5px 0px rgba(172, 196, 66, 1);
+  cursor: pointer;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden !important;
+}
+.day::-webkit-scrollbar {
+  width: 0px;
+}
+
+.day::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.day:hover:not(.active) {
+  background-color: rgba(113, 113, 235, 0.6);
+  border-radius: 8px;
+}
+.day:hover:not(.active) p {
+  color: #f8f8f8;
+}
+
+.dayLayout {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.dayNumber {
+  color: rgb(179, 124, 24);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 0.25em auto;
+}
+.active p {
+  background-color: rgb(89, 156, 0);
+  padding: 4px 5px;
+  border-radius: 50%;
+  color: #f8f8f8;
+}
+.notActiveMonth {
+  background-color: #efefef;
+}
+
+.notActiveMonth .dayNumber {
+  color: grey;
+}
+.selected {
+  background-color: rgba(113, 113, 235, 0.4);
+  border-radius: 0.5rem;
+}
+.selected p {
+  color: #f8f8f8 !important;
+}
+.task {
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 0.2rem;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 200;
+  opacity: 0.7;
+  text-align: left;
+  margin-bottom: 3px;
+}
+.task:hover {
+  opacity: 1;
+}
+.pTag {
+  border-radius: 0 !important;
+  width: 100%;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+/* 
+@media (min-width: 500px) {
+  .task p {
+    width: 100%;
+    max-width: 5rem;
+  }
+}
+@media (min-width: 768px) {
+  .task p {
+    width: 100%;
+    max-width: 10rem;
+    font-size: 0.85rem;
+  }
+} */

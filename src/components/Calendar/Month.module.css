@@ -1,0 +1,17 @@
+.monthLayout {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(2rem, 10rem));
+  grid-template-rows: repeat(7, minmax(2rem, 5rem));
+  gap: 3px;
+  place-content: center;
+}
+
+.dayNames {
+  text-decoration: underline;
+  height: 100%;
+  color: #f8f8f8;
+  background-color: rgb(74, 173, 255);
+  display: flex;
+  place-items: center;
+  place-content: center;
+}

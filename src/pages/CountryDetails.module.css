@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,900&display=swap");
+
+.rows {
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* height: calc(100vh - 5rem); */
+  width: 100%;
+  max-width: 90rem;
+  margin: 0rem auto;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+@media (min-width: 968px) {
+  .rows {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr !important;
+    width: 90% !important;
+  }
+  .row1 {
+    grid-template-columns: 1fr 0.75fr !important;
+    gap: 5rem;
+  }
+  .row2 {
+    text-align: left !important;
+  }
+  .video {
+    height: 14rem !important;
+    max-width: 80% !important;
+  }
+  .col2 {
+    display: block !important;
+  }
+  .searchForm {
+    flex-direction: row !important;
+  }
+  .formAction {
+    width: 40% !important;
+  }
+}
+.row1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  place-items: center;
+  gap: 0;
+  background-image: linear-gradient(
+      rgba(190, 218, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("https://img.freepik.com/free-vector/set-famous-landmark-vectors_53876-77150.jpg?w=1800&t=st=1668018863~exp=1668019463~hmac=38bbf57836ddebe707c3e824d83303ba0d1914750fdd1cab1af6506e38b7b080");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+.col1 h2 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-style: italic;
+  font-weight: 900;
+  color: var(--p-navy);
+  margin-top: 0;
+}
+
+.col1 p {
+  font-size: clamp(0.5rem, 3vw, 1.25rem);
+  color: var(--p-dark);
+  font-weight: bold;
+}
+
+.col2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--p-navy);
+}
+.col2 h2 span {
+  font-style: italic;
+  font-weight: 900;
+}
+.col2 {
+  display: none;
+}
+.row2 {
+  margin: 1rem 0;
+  text-align: center;
+}
+.row2 h2 {
+  color: var(--p-navy);
+}
+.row2 h2 span {
+  font-style: italic;
+  font-weight: 900;
+}
+.video {
+  width: 80%;
+  max-width: 20rem;
+  height: 10rem;
+}
+
+.dropdown {
+  width: 100%;
+  display: flex;
+  place-items: center;
+}
+.searchUni {
+  width: 100%;
+}
+
+.searchForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.formAction {
+  width: 100%;
+  text-align-last: end;
+  margin-top: 0.5rem;
+  place-content: center;
+}
+
+.universities {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.uniCard img {
+  width: 70%;
+  height: 6rem;
+  object-fit: contain;
+}
+.uniCard {
+  height: 10rem;
+  width: 10rem;
+  box-shadow: 0 0 2px 1px var(--warning-hover);
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  padding: 0.5rem 0;
+}
+.uniLabel {
+  position: absolute;
+  width: 100%;
+  bottom: -15px;
+  font-size: x-small;
+  font-weight: bolder;
+  color: var(--success-hover);
+}

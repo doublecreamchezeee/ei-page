@@ -1,0 +1,100 @@
+.main-navigation__menu-btn {
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.33s ease-in-out;
+}
+
+.main-navigation__menu-btn span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 15px;
+  background-color: var(--regular);
+}
+
+.main-navigation__menu-btn:hover {
+  scale: 1.05;
+}
+
+.main-navigation__title {
+  /* color: rgb(0, 69, 147); */
+  font-family: "Russo One", sans-serif;
+  margin-left: 1rem;
+}
+.eu-logo {
+  color: var(--p-dark);
+}
+.main-navigation__title img {
+  display: none;
+}
+.main-navigation__title a {
+  text-decoration: none;
+  color: var(--regular);
+}
+
+.main-navigation__header-nav {
+  display: none;
+}
+
+/* .main-navigation__drawer-nav {
+  height: 100%;\
+  color: pink;
+} */
+.main-navigation__drawer-title {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-right: 15px;
+  font-family: "Russo One", sans-serif;
+}
+
+.main-navigation__drawer-title a,
+a:active {
+  color: var(--regular);
+}
+.drawer-canceler {
+  width: 30px;
+  height: 30px;
+  border: 4px solid var(--regular);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  color: var(--regular);
+  font-weight: 800;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.drawer-canceler:hover {
+  transform: rotate(180deg);
+  color: var(--danger);
+  border-color: var(--danger);
+}
+@media (min-width: 968px) {
+  .main-navigation__menu-btn {
+    display: none;
+  }
+  .main-navigation__title {
+    margin-left: 2rem;
+    text-decoration: underline;
+  }
+  .main-navigation__title img {
+    display: inline;
+    height: 55px;
+    width: 45px;
+  }
+  .main-navigation__header-nav {
+    display: inline-block;
+    height: 4rem;
+  }
+}

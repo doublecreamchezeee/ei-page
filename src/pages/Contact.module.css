@@ -1,0 +1,77 @@
+.content {
+  background-color: var(--white);
+  display: grid;
+  grid-template-areas:
+    "top top top"
+    "bot bot bot"
+    "bot bot bot";
+  align-items: center;
+  row-gap: 0;
+}
+.topRow {
+  text-align: center;
+  grid-area: top;
+  justify-self: center;
+  align-self: end;
+  width: 70%;
+}
+.botRow {
+  grid-area: bot;
+  justify-self: center;
+  width: 90%;
+  max-width: 40rem;
+}
+.sideBar {
+  display: none;
+}
+.topRow img {
+  width: 65%;
+}
+.contactInfo {
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.form {
+  padding: 1em 0.75em;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 2px 1px var(--regular);
+  padding: 2rem;
+}
+.formTitle {
+  color: var(--p-navy);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.formAction {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 968px) {
+  .content {
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-areas: "side bot top";
+  }
+  .sideBar {
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 13rem;
+    height: 100%;
+    background-color: var(--regular);
+  }
+  .topRow {
+    justify-self: center;
+    align-self: center;
+  }
+  .topRow img {
+    width: 100%;
+  }
+}

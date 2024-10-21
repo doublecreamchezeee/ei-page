@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,900&display=swap");
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #e74c3c;
+  --text-dark: #333;
+  --text-light: #f4f4f4;
+  --accent-color: #f39c12;
+}
+
+.rows {
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  background-color: rgba(190, 218, 255, 0.8);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  margin: 20px;
+}
+
+.row1 h2 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-style: italic;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.row1 p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: var(--text-dark);
+  margin: 1.5rem 0;
+}
+
+.col1 h3 {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+/* .slider-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem 0;
+  position: relative;
+} */
+
+.slider {
+  position: relative;
+  width: 100%; /* Full width */
+  max-width: 600px; /* Max width for better responsiveness */
+  margin: auto; /* Center the slider */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.sliderWrapper {
+  display: flex; /* Align images in a row */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+}
+
+.sliderImage {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.searchUni {
+  text-align: start;
+}
+
+.row1 {
+  text-align: center; /* Center text in the first row */
+}
+
+.col2 {
+  margin-top: 20px; /* Space between the slider and title */
+}
+
+
+.row1 {
+  text-align: center; /* Center text in the first row */
+}
+
+.col2 {
+  margin-top: 20px; /* Space between the slider and title */
+}
+
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.item {
+  background-color: #f9f9f9; /* Light background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Inner padding */
+  width: 100%; /* Full width */
+  max-width: 600px; /* Max width for better responsiveness */
+}
+
+.overlayTitle {
+  font-size: 24px; /* Title font size */
+  font-weight: bold; /* Bold text */
+  color: #333; /* Dark text color */
+  margin-bottom: 15px; /* Space below title */
+  text-align: center; /* Center title */
+}
+
+.documentList {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.documentItem {
+  background-color: #fff; /* White background for items */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners for items */
+  padding: 10px; /* Inner padding */
+  margin: 10px 0; /* Space between items */
+  display: flex; /* Flexbox for item */
+  align-items: center; /* Center items vertically */
+}
+
+.documentItem strong {
+  margin-right: 10px; /* Space between number and text */
+  color: #007bff; /* Highlight number */
+}
+
+@media (max-width: 768px) {
+  .item {
+    padding: 15px; /* Less padding on smaller screens */
+  }
+
+  .overlayTitle {
+    font-size: 20px; /* Smaller title font size */
+  }
+}
+
+
+@media (min-width: 768px) {
+  .rows {
+    grid-template-rows: 0.7fr 1.2fr;
+  }
+
+  .row1 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .slider-container {
+    max-width: 50%;
+  }
+
+  .row2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .row1 {
+    padding: 4rem;
+  }
+
+  .row2 h3 {
+    font-size: 2rem;
+  }
+}

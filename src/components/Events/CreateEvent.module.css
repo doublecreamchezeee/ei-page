@@ -1,0 +1,127 @@
+.button {
+  border: none;
+  box-shadow: 0 0 2px 0px #ccc;
+  background-color: #fff;
+  display: flex;
+  gap: 1rem;
+  border-radius: 0.2rem;
+  width: 8rem;
+  height: 3rem;
+  place-items: center;
+  place-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 1rem;
+  color: rgb(97, 97, 97);
+  transition: all 0.15s ease-in;
+}
+.button:hover {
+  /* scale: 1.01; */
+  box-shadow: 0px 0px 1px 2px #ccc;
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: inset 1px 5px 5px 0px #ccc;
+}
+.modalButton {
+  display: flex;
+  margin-right: 5%;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+.modalButton button {
+  border: none;
+  box-shadow: 0 0 3px 1px #ccc;
+  background-color: rgb(72, 158, 255);
+  border-radius: 0.2rem;
+  width: 4rem;
+  height: 1.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+  transition: all 0.15s ease-in;
+}
+.modalButton button:hover {
+  box-shadow: 0px 0px 1px 2px rgb(72, 158, 255);
+}
+.modalButton button:active {
+  box-shadow: inset 1px 5px 5px 0px rgb(72, 158, 255);
+}
+.deleteBtn {
+  color: #fff;
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+.deleteBtn:hover {
+  scale: 1.04;
+  cursor: pointer;
+}
+.formContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.details {
+  display: flex;
+  justify-content: flex-start;
+  place-items: center;
+  width: 85%;
+  margin: 0.5rem 0;
+  gap: 5%;
+}
+.color {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  cursor: pointer;
+}
+.active {
+  color: white;
+}
+.active::before {
+  content: "\2713";
+}
+.color:is(.active) {
+  scale: 1.1;
+  box-shadow: inset 0px 0px 3px 0px rgb(42, 45, 49);
+}
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+.formInput label {
+  font-size: 0.8rem;
+  color: rgb(97, 97, 97, 0.8);
+  font-weight: bold;
+}
+.formInput input,
+.formInput textarea {
+  margin: 0.5em;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em;
+  outline: none;
+  caret-color: #ccc;
+  color: rgb(97, 97, 97);
+  font-weight: 600;
+  transition: border 0.2s ease-in-out;
+}
+.formInput input:active,
+.formInput input:focus,
+.formInput textarea:active,
+.formInput textarea:focus {
+  border-bottom: 1px solid rgba(118, 150, 255, 0.85);
+}
+.formInput input::placeholder,
+.formInput textarea::placeholder {
+  color: #ccc;
+}

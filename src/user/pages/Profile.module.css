@@ -1,0 +1,133 @@
+.content {
+  background-color: var(--off-white);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.24fr 1fr;
+  color: var(--p-navy);
+  width: 100%;
+  max-width: 90rem;
+  /* margin: 1rem auto; */
+  padding-top: 2rem;
+}
+
+.profile {
+  display: flex;
+  place-items: center;
+  place-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+.profile p {
+  margin: 0;
+}
+
+.profileDetails {
+  display: none;
+}
+.profileInfo {
+  margin-bottom: 1rem;
+}
+
+.profileLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.link {
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  place-content: center;
+  width: 6rem;
+}
+
+.icon {
+  color: var(--warning-hover);
+  width: 25px;
+}
+.active {
+  border-bottom: 1px solid var(--regular);
+}
+.application {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  width: 100%;
+}
+
+.arrow {
+  display: none;
+}
+@media (min-width: 968px) {
+  .content {
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 2rem;
+  }
+  .profileDetails {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .profileInfo {
+    display: flex;
+    flex-direction: column;
+    place-items: flex-start;
+    place-content: center;
+    padding-left: 1rem;
+  }
+
+  .profileAvatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: transparent, var(--warning-hover);
+    display: flex;
+    place-content: center;
+    place-items: center;
+  }
+  .profileAvatar img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+  }
+  .profile h2 {
+    font-size: 1rem;
+  }
+
+  .profileLinks {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+  .profile {
+    width: 20rem;
+    align-items: flex-start;
+    margin-left: 2rem;
+    padding-right: 2rem;
+    border-right: 1px dashed var(--warning-hover);
+  }
+
+  .link {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+  }
+
+  .linkTag {
+    display: flex;
+    gap: 2rem;
+    place-content: center;
+    place-items: center;
+  }
+
+  .arrow {
+    display: inline-block;
+    color: var(--p-dark);
+  }
+}

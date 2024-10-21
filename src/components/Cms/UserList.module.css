@@ -1,0 +1,35 @@
+.listPage {
+  display: grid;
+  gap: 1.5rem;
+  height: 100%;
+  width: 100%;
+  margin: 2rem auto;
+  max-width: 75rem;
+}
+.searchBar {
+  display: flex;
+  margin: auto;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 10rem));
+  gap: 1rem;
+  place-content: center;
+}
+.list a {
+  text-decoration: none;
+  color: var(--p-navy) !important;
+}
+.list a:visited {
+  color: var(--p-dark) !important;
+}
+.addEmp {
+  display: flex;
+  margin: auto;
+}
+.addEmp button {
+  margin: 0 2rem;
+}
+.noUser {
+  width: 100% !important;
+}

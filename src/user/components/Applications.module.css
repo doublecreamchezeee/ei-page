@@ -1,0 +1,162 @@
+.layout {
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 55rem;
+}
+.applicationDetail,
+.taskDetail {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  width: 90%;
+  margin: 2rem 0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2rem;
+  color: var(--white);
+}
+
+.applicationDetail img {
+  width: 4rem;
+  height: 3rem;
+}
+.applicationDetail div {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+}
+.applicationDate,
+.applicationId {
+  display: none !important;
+}
+.applicationActions {
+  display: flex;
+  gap: 1rem;
+}
+.pending {
+  background-color: var(--warning-hover);
+}
+.accepted {
+  background-color: var(--success-hover);
+}
+.declined {
+  background-color: var(--danger-hover);
+}
+
+.task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.taskForm {
+  margin-top: 3rem;
+}
+
+.layout form {
+  width: 100%;
+  max-width: 45rem;
+}
+.taskActions {
+  display: flex;
+  gap: 4em;
+}
+.formAction {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.formControl {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  place-items: center;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 100rem;
+}
+.settings {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 4rem;
+}
+.settings h4 {
+  font-size: 1.25rem;
+  color: var(--danger-hover);
+}
+@media (min-width: 968px) {
+  .settings {
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+  }
+  .applicationDate,
+  .applicationId {
+    display: inline !important;
+  }
+}
+
+[data-idx="0"] {
+  position: relative;
+}
+.taskLabel1,
+.taskLabel2 {
+  position: absolute;
+  color: var(--p-dark);
+  border: 1px solid var(--warning);
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.taskLabel1 {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  right: -0.4em;
+  top: -3.2em;
+}
+.taskLabel2 {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  right: 5em;
+  top: -3.2em;
+}
+
+.stdList {
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.editIcon:hover {
+  color: var(--regular-hover);
+  cursor: pointer;
+}
+.deleteIcon:hover {
+  color: var(--danger-hover);
+  cursor: pointer;
+}
+.delBtn {
+  position: relative;
+}
+.delBtn button {
+  position: absolute;
+  bottom: -2.3rem;
+  right: 0.2rem;
+}

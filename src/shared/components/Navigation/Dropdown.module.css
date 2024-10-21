@@ -1,0 +1,32 @@
+.dropdown {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  border-radius: 1rem;
+  min-width: 5rem;
+  min-height: 12rem;
+  gap: 0rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 3.5rem;
+  left: -15%;
+
+  transition: all 0.5s cubic-bezier(0.3, 0.01, 0.33, 0.95);
+}
+@media (min-width: 968px) {
+  .dropdown {
+    gap: 1.2rem;
+    top: 3rem;
+  }
+}
+.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+.noshow {
+  transform: translateY(-10rem);
+  opacity: 0;
+  z-index: -99999;
+}
